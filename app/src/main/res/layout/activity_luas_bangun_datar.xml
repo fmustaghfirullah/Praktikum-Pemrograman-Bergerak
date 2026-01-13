@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    tools:context=".LuasBangunDatarActivity">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hitung_luas_bangun_datar"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#1976D2"
+        android:fontFamily="sans-serif-medium"
+        android:layout_gravity="center"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Spinner Pilih Bangun -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pilih_bangun_datar"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="8dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerBangun"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="12dp"
+        android:layout_marginBottom="24dp"
+        android:minHeight="48dp" />
+
+    <!-- Input Layout -->
+    <LinearLayout
+        android:id="@+id/layoutInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+      <!-- Input 1 -->
+      <TextView
+          android:id="@+id/tvLabel1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/panjang"
+          android:textColor="@android:color/black"
+          android:textSize="16sp"
+          android:layout_marginTop="8dp"/>
+
+      <EditText
+          android:id="@+id/etInput1"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="@string/masukkan_nilai"
+          android:inputType="numberDecimal"
+          android:textColor="@android:color/black"
+          android:background="#FFFFFF"
+          android:padding="12dp"
+          android:layout_marginBottom="16dp"/>
+
+      <!-- Input 2 -->
+      <TextView
+          android:id="@+id/tvLabel2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/lebar"
+          android:textColor="@android:color/black"
+          android:textSize="16sp"
+          android:layout_marginTop="8dp"/>
+
+      <EditText
+          android:id="@+id/etInput2"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="@string/masukkan_nilai"
+          android:inputType="numberDecimal"
+          android:textColor="@android:color/black"
+          android:background="#FFFFFF"
+          android:padding="12dp"
+          android:layout_marginBottom="16dp"/>
+
+    </LinearLayout>
+
+    <!-- Button Hitung -->
+    <Button
+        android:id="@+id/btnHitung"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hitung"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:backgroundTint="#4CAF50"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Result -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:padding="16dp"
+        android:layout_marginTop="24dp">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/hasil"
+          android:textSize="18sp"
+          android:textStyle="bold"
+          android:textColor="@android:color/black"/>
+
+      <TextView
+          android:id="@+id/tvHasil"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="-"
+          android:textSize="32sp"
+          android:textColor="#4CAF50"
+          android:fontFamily="sans-serif-medium"
+          android:layout_marginTop="8dp"/>
+
+      <TextView
+          android:id="@+id/tvRumus"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text=""
+          android:textSize="14sp"
+          android:textColor="@android:color/black"
+          android:layout_marginTop="8dp"/>
+
+    </LinearLayout>
+
+  </LinearLayout>
+
+</ScrollView>

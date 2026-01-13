@@ -1,0 +1,153 @@
+<resources>
+    <string name="app_name">Calculator</string>
+
+    <!-- String yang sudah Anda tambahkan -->
+    <string name="panjang">Panjang:</string>
+    <string name="lebar">Lebar:</string>
+    <string name="hitung">Hitung Luas</string>
+    <string name="hasil">Hasil:</string>
+
+    <!-- String tambahan untuk aplikasi -->
+    <string name="kalkulator">Kalkulator</string>
+    <string name="luas_bangun_datar">Luas Bangun Datar</string>
+    <string name="intent">Intent</string>
+    <string name="identitas">Identitas</string>
+    <string name="view">View</string>
+    <string name="view_group">View Group</string>
+    <string name="sound_effect">Sound Effect</string>
+    <string name="hitung_luas_bangun_datar">Hitung Luas Bangun Datar</string>
+    <string name="pilih_bangun_datar">Pilih Bangun Datar:</string>
+    <string name="masukkan_nilai">Masukkan nilai</string>
+
+    <string name="daftar_mata_kuliah">Daftar Mata Kuliah</string>
+    <string name="detail_mata_kuliah">Detail Mata Kuliah</string>
+    <string name="back">Kembali</string>
+
+    <!-- Mata Kuliah 1 -->
+    <string name="mk1_nama">Analisis dan Desain Sistem</string>
+    <string name="mk1_pengampu">Indah Puji Astuti</string>
+    <string name="mk1_kode">MKW202201</string>
+    <string name="mk1_deskripsi">Pada mata kuliah ini mahasiswa belajar untuk menjadi seorang analis sistem. Mahasiswa belajar berbagai metode pengembangan sistem, cara-cara menganalisis permasalahan dan membuat solusi alternatif tentang sistem yang sedang berjalan. Setelah memahami konsep analisis mahasiswa belajar tentang bagaimana membuat perancangan sistem. Dalam mata kuliah ini mahasiswa diminta untuk menyelesaikan studi kasus kemudian menyusun laporan yang berisi dokumen analisis dan dokumen perancangan serta dapat mempresentasikannya secara berkelompok.</string>
+
+    <!-- Mata Kuliah 2 -->
+    <string name="mk2_nama">Data Mining</string>
+    <string name="mk2_pengampu">Ghulam Asrofi Buntoro</string>
+    <string name="mk2_kode">MKW202202</string>
+    <string name="mk2_deskripsi">Pada mata kuliah ini mahasiswa belajar untuk memahami data, mulai dari teknik preprocessing sampai dengan teknik mengolah data dengan beberapa algoritma klasifikasi seperti Decision Tree, Algoritma K-nearest Neighbor, dan juga Bayesian sehingga diperoleh pola-pola tertentu yang dapat menjadi informasi yang berguna. Dalam mata kuliah ini mahasiswa diminta untuk menyelesaikan studi kasus kemudian menyelesaikannya dengan menerapkan algoritma data mining.</string>
+
+
+    <!-- Identitas & Buah -->
+    <string name="pilih_buah">Pilih Buah</string>
+    <string name="apel">🍎 Apel</string>
+    <string name="jeruk">🍊 Jeruk</string>
+    <string name="pisang">🍌 Pisang</string>
+    <string name="Pear">🍐 Pear</string>
+    <string name="semangka">🍉 Semangka</string>
+    <string name="gambar_buah">Gambar Buah</string>
+    <string name="kembali">Kembali</string>
+
+    <!-- Bangun Datar -->
+    <string name="persegi">Persegi</string>
+    <string name="persegi_panjang">Persegi Panjang</string>
+    <string name="segitiga">Segitiga</string>
+    <string name="lingkaran">Lingkaran</string>
+    <string name="trapesium">Trapesium</string>
+    <string name="jajar_genjang">Jajar Genjang</string>
+
+    <!-- Label Input -->
+    <string name="sisi">Sisi:</string>
+    <string name="alas">Alas:</string>
+    <string name="tinggi">Tinggi:</string>
+    <string name="jari_jari">Jari-jari (r):</string>
+    <string name="sisi_atas">Sisi Atas:</string>
+    <string name="sisi_bawah_tinggi">Sisi Bawah + Tinggi (pisahkan dengan koma):</string>
+
+    <!-- Toast Messages -->
+    <string name="isi_semua_input">Mohon isi semua input!</string>
+    <string name="isi_lebar">Mohon isi lebar!</string>
+    <string name="isi_tinggi">Mohon isi tinggi!</string>
+    <string name="format_trapesium">Format: sisi_bawah,tinggi</string>
+    <string name="input_tidak_valid">Input tidak valid!</string>
+
+    <string name="image_description">Gambar Ilustrasi apel</string>
+
+    <string name="form_mahasiswa">Form Mahasiswa</string>
+    <string name="judul">Form Pendaftaran Mahasiswa</string>
+    <string name="subtitle">Universitas Muhammadiyah Ponorogo</string>
+
+    <string name="label_nama">Nama Lengkap</string>
+    <string name="hint_nama">Masukkan nama lengkap</string>
+
+    <string name="label_nim">NIM</string>
+    <string name="hint_nim">Masukkan NIM</string>
+
+    <string name="label_email">Email</string>
+    <string name="hint_email">contoh@email.com</string>
+
+    <string name="label_jenis_kelamin">Jenis Kelamin</string>
+    <string name="radio_laki">Laki-laki</string>
+    <string name="radio_perempuan">Perempuan</string>
+
+    <string name="label_prodi">Program Studi</string>
+
+    <string name="label_hobi">Hobi (Pilih minimal 1)</string>
+    <string name="hobi_membaca">Membaca</string>
+    <string name="hobi_olahraga">Olahraga</string>
+    <string name="hobi_musik">Musik</string>
+    <string name="hobi_travelling">Travelling</string>
+
+    <string name="btn_submit">DAFTAR SEKARANG</string>
+    <string name="btn_reset">Reset Form</string>
+
+    <string name="toko_online">Toko Online</string>
+    <string name="store_name">TOKO ONLINE WAHYU</string>
+    <string name="tagline">Belanja Mudah, Harga Terjangkau</string>
+
+    <!-- Categories -->
+    <string name="kategori">Kategori Produk</string>
+    <string name="cat_elektronik">Elektronik</string>
+    <string name="cat_fashion">Fashion</string>
+    <string name="cat_makanan">Makanan</string>
+    <string name="cat_olahraga">Olahraga</string>
+
+    <!-- Products -->
+    <string name="produk_populer">Produk Populer</string>
+
+    <!-- Product 1 -->
+    <string name="prod1_name">Laptop Gaming</string>
+    <string name="prod1_price">Rp 8.500.000</string>
+    <string name="prod1_desc">Intel Core i7, RAM 16GB, SSD 512GB</string>
+
+    <!-- Product 2 -->
+    <string name="prod2_name">Smartphone Pro</string>
+    <string name="prod2_price">Rp 5.200.000</string>
+    <string name="prod2_desc">6GB RAM, 128GB Storage, Camera 48MP</string>
+
+    <!-- Product 3 -->
+    <string name="prod3_name">Headphone Wireless</string>
+    <string name="prod3_price">Rp 850.000</string>
+    <string name="prod3_desc">Bluetooth 5.0, Noise Canceling</string>
+
+    <!-- Product 4 -->
+    <string name="prod4_name">Smart Watch</string>
+    <string name="prod4_price">Rp 1.200.000</string>
+    <string name="prod4_desc">Heart Rate Monitor, Waterproof IP68</string>
+
+    <string name="btn_beli">BELI SEKARANG</string>
+    <string name="btn_keranjang">KERANJANG</string>
+    <string name="promo">Promo Spesial Hari Ini!</string>
+
+    <string-array name="prodi_list">
+        <item>Pilih Program Studi</item>
+        <item>Teknik Informatika</item>
+        <item>Sistem Informasi</item>
+        <item>Teknik Elektro</item>
+        <item>Teknik Sipil</item>
+        <item>Manajemen</item>
+        <item>Akuntansi</item>
+    </string-array>
+
+
+
+
+</resources>

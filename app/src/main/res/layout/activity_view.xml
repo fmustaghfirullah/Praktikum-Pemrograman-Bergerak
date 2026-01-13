@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_light">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Header Card dengan ImageView dan TextView -->
+        <LinearLayout
+            style="@style/CardStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <!-- ImageView: Logo Universitas -->
+            <ImageView
+                android:id="@+id/imgLogo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@mipmap/ic_launcher"
+                android:scaleType="centerCrop"/>
+
+            <!-- TextView: Judul -->
+            <TextView
+                android:id="@+id/txtJudul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/judul"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/blue_primary"
+                android:layout_marginTop="12dp"
+                android:textAlignment="center"/>
+
+            <!-- TextView: Subtitle -->
+            <TextView
+                android:id="@+id/txtSubtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/subtitle"
+                android:textSize="14sp"
+                android:textColor="@color/gray"
+                android:layout_marginTop="4dp"/>
+        </LinearLayout>
+
+        <!-- Form Card -->
+        <LinearLayout
+            style="@style/CardStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp">
+
+            <!-- EditText: Nama Lengkap -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_nama"
+                style="@style/LabelTextStyle"/>
+
+            <EditText
+                android:id="@+id/edtNama"
+                style="@style/EditTextStyle"
+                android:minHeight="48dp"
+                android:textColor="@color/black"
+                android:hint="@string/hint_nama"
+                android:inputType="textPersonName"/>
+
+            <!-- EditText: NIM -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_nim"
+                style="@style/LabelTextStyle"/>
+
+            <EditText
+                android:id="@+id/edtNim"
+                style="@style/EditTextStyle"
+                android:minHeight="48dp"
+                android:textColor="@color/black"
+                android:hint="@string/hint_nim"
+                android:inputType="number"
+                android:maxLength="10"/>
+
+            <!-- EditText: Email -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_email"
+                style="@style/LabelTextStyle"/>
+
+            <EditText
+                android:id="@+id/edtEmail"
+                style="@style/EditTextStyle"
+                android:textColor="@color/black"
+                android:minHeight="48dp"
+                android:hint="@string/hint_email"
+                android:inputType="textEmailAddress"/>
+
+            <!-- RadioButton: Jenis Kelamin -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_jenis_kelamin"
+                style="@style/LabelTextStyle"/>
+
+            <RadioGroup
+                android:id="@+id/radioGroupGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioLaki"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:text="@string/radio_laki"
+                    android:textSize="16sp"/>
+
+                <RadioButton
+                    android:id="@+id/radioPerempuan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:text="@string/radio_perempuan"
+                    android:textSize="16sp"/>
+            </RadioGroup>
+
+            <!-- Spinner: Program Studi -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_prodi"
+                android:textColor="@color/black"
+                style="@style/LabelTextStyle"/>
+
+            <Spinner
+                android:id="@+id/spinnerProdi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:padding="12dp"
+                android:minHeight="48dp"
+                android:background="@drawable/edittext_background"/>
+        </LinearLayout>
+
+        <!-- Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <!-- Button: Reset -->
+            <Button
+                android:id="@+id/btnReset"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/btn_reset"
+                android:background="@drawable/button_reset_background"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:padding="14dp"
+                android:layout_marginEnd="8dp"/>
+
+            <!-- Button: Submit -->
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/btn_submit"
+                android:background="@drawable/button_background"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:padding="14dp"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+        <!-- TextView: Info -->
+        <TextView
+            android:id="@+id/txtInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Silakan isi form di atas dengan lengkap"
+            android:textSize="12sp"
+            android:textColor="@color/gray"
+            android:textAlignment="center"
+            android:layout_marginTop="16dp"/>
+
+    </LinearLayout>
+</ScrollView>

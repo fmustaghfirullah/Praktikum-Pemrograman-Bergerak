@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Palet Warna Utama Aplikasi Anda -->
+    <color name="blue_primary">#1976D2</color>      <!-- Biru Gelap (seperti judul Anda) -->
+    <color name="blue_dark">#0D47A1</color>        <!-- Biru Lebih Gelap untuk Status Bar -->
+    <color name="green_accent">#4CAF50</color>     <!-- Hijau untuk Aksen (seperti tombol) -->
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="light_gray">#F5F5F5</color>      <!-- Warna Latar Belakang -->
+    <color name="primary_dark">#1565C0</color>
+    <color name="accent">#FF9800</color>
+    <color name="gray">#757575</color>
+    <color name="green">#4CAF50</color>
+    <color name="blue_light">#E3F2FD</color>
+    <color name="red">#F44336</color>
+    <color name="orange">#FF9800</color>
+    <color name="blue">#2196F3</color>
+    <color name="yellow">#FFC107</color>
+    <color name="purple">#9C27B0</color>
+    <color name="background">#F5F5F5</color>
+</resources>

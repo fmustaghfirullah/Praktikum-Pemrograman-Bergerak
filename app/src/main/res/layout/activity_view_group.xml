@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue_primary"
+            android:padding="16dp"
+            android:elevation="4dp">
+
+            <!-- Logo & Title -->
+            <LinearLayout
+                android:id="@+id/layoutTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🛒"
+                    android:textSize="32sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/store_name"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tagline"
+                    android:textSize="12sp"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+            <!-- Keranjang Button with Badge (RelativeLayout) -->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:id="@+id/btnCart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🛒"
+                    android:textSize="36sp"
+                    android:padding="8dp"/>
+
+                <!-- Badge Notification (RelativeLayout positioning) -->
+                <TextView
+                    android:id="@+id/badgeCart"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:text="3"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:background="@drawable/badge_background"
+                    android:layout_alignTop="@id/btnCart"
+                    android:layout_alignEnd="@id/btnCart"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <!-- ========== PROMO BANNER dengan FrameLayout ========== -->
+        <!-- ViewGroup 4: FrameLayout - Overlay text di atas background -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_margin="16dp">
+
+            <!-- Background Layer -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/promo_background"/>
+
+            <!-- Content Layer (Overlay) -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="⚡ FLASH SALE ⚡"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/promo"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="4dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Diskon hingga 50%"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="4dp"/>
+            </LinearLayout>
+        </FrameLayout>
+
+        <!-- ========== KATEGORI dengan LinearLayout Horizontal ========== -->
+        <LinearLayout
+            style="@style/CardStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kategori"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- ViewGroup 5: LinearLayout (Horizontal) - Kategori Row 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/catElektronik"
+                    style="@style/CategoryButtonStyle"
+                    android:text="@string/cat_elektronik"
+                    android:background="@drawable/button_blue"/>
+
+                <TextView
+                    android:id="@+id/catFashion"
+                    style="@style/CategoryButtonStyle"
+                    android:text="@string/cat_fashion"
+                    android:background="@drawable/button_purple"/>
+            </LinearLayout>
+
+            <!-- LinearLayout (Horizontal) - Kategori Row 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/catMakanan"
+                    style="@style/CategoryButtonStyle"
+                    android:text="@string/cat_makanan"
+                    android:background="@drawable/button_orange"/>
+
+                <TextView
+                    android:id="@+id/catOlahraga"
+                    style="@style/CategoryButtonStyle"
+                    android:text="@string/cat_olahraga"
+                    android:background="@drawable/button_green"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- ========== PRODUK POPULER dengan GridLayout ========== -->
+        <LinearLayout
+            style="@style/CardStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/produk_populer"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- ViewGroup 6: GridLayout - Grid 2 kolom untuk produk -->
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:rowCount="2"
+                android:alignmentMode="alignBounds">
+
+                <!-- Product 1 -->
+                <LinearLayout
+                    android:id="@+id/product1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="4dp"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:background="@drawable/card_background"
+                    android:elevation="2dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="💻"
+                        android:textSize="48sp"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/prod1_name"
+                        style="@style/ProductTitleStyle"
+                        android:layout_marginTop="8dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/prod1_price"
+                        style="@style/PriceStyle"
+                        android:layout_marginTop="4dp"/>
+                </LinearLayout>
+
+                <!-- Product 2 -->
+                <LinearLayout
+                    android:id="@+id/product2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="4dp"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:background="@drawable/card_background"
+                    android:elevation="2dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="📱"
+                        android:textSize="48sp"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/prod2_name"
+                        style="@style/ProductTitleStyle"
+                        android:layout_marginTop="8dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/prod2_price"
+                        style="@style/PriceStyle"
+                        android:layout_marginTop="4dp"/>
+                </LinearLayout>
+
+                <!-- Product 3 -->
+                <LinearLayout
+                    android:id="@+id/product3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="4dp"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:background="@drawable/card_background"
+                    android:elevation="2dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🎧"
+                        android:textSize="48sp"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/prod3_name"
+                        style="@style/ProductTitleStyle"
+                        android:layout_marginTop="8dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/prod3_price"
+                        style="@style/PriceStyle"
+                        android:layout_marginTop="4dp"/>
+                </LinearLayout>
+
+                <!-- Product 4 -->
+                <LinearLayout
+                    android:id="@+id/product4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="4dp"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:background="@drawable/card_background"
+                    android:elevation="2dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="⌚"
+                        android:textSize="48sp"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/prod4_name"
+                        style="@style/ProductTitleStyle"
+                        android:layout_marginTop="8dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/prod4_price"
+                        style="@style/PriceStyle"
+                        android:layout_marginTop="4dp"/>
+                </LinearLayout>
+
+            </GridLayout>
+        </LinearLayout>
+
+
+        <!-- ========== BUTTON ACTIONS ========== -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <Button
+                android:id="@+id/btnBeli"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/btn_beli"
+                android:background="@drawable/button_primary"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:padding="14dp"
+                android:layout_marginEnd="8dp"/>
+
+            <Button
+                android:id="@+id/btnKeranjang"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/btn_keranjang"
+                android:background="@drawable/button_green"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:padding="14dp"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+        <!-- Footer -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="© 2024 Toko Online Wahyu - Semua Hak Dilindungi"
+            android:textSize="12sp"
+            android:textColor="@color/gray"
+            android:textAlignment="center"
+            android:padding="16dp"/>
+
+    </LinearLayout>
+</ScrollView>
