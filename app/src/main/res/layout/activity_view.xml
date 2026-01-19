@@ -2,7 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/blue_light">
+    android:background="@color/cat_base">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -16,7 +16,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:gravity="center">
+            android:gravity="center"
+            android:background="@color/cat_surface0">
 
             <!-- ImageView: Logo Universitas -->
             <ImageView
@@ -34,7 +35,7 @@
                 android:text="@string/judul"
                 android:textSize="20sp"
                 android:textStyle="bold"
-                android:textColor="@color/blue_primary"
+                android:textColor="@color/cat_blue"
                 android:layout_marginTop="12dp"
                 android:textAlignment="center"/>
 
@@ -45,7 +46,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/subtitle"
                 android:textSize="14sp"
-                android:textColor="@color/gray"
+                android:textColor="@color/cat_subtext1"
                 android:layout_marginTop="4dp"/>
         </LinearLayout>
 
@@ -55,21 +56,26 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_marginTop="16dp">
+            android:layout_marginTop="16dp"
+            android:background="@color/cat_surface0">
 
             <!-- EditText: Nama Lengkap -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/label_nama"
-                style="@style/LabelTextStyle"/>
+                style="@style/LabelTextStyle"
+                android:textColor="@color/cat_text"/>
 
             <EditText
                 android:id="@+id/edtNama"
                 style="@style/EditTextStyle"
                 android:minHeight="48dp"
-                android:textColor="@color/black"
+                android:textColor="@color/cat_text"
+                android:textColorHint="@color/cat_overlay0"
+                android:background="@color/cat_surface1"
                 android:hint="@string/hint_nama"
+                android:padding="12dp"
                 android:inputType="textPersonName"/>
 
             <!-- EditText: NIM -->
@@ -77,14 +83,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/label_nim"
-                style="@style/LabelTextStyle"/>
+                style="@style/LabelTextStyle"
+                android:textColor="@color/cat_text"/>
 
             <EditText
                 android:id="@+id/edtNim"
                 style="@style/EditTextStyle"
                 android:minHeight="48dp"
-                android:textColor="@color/black"
+                android:textColor="@color/cat_text"
+                android:textColorHint="@color/cat_overlay0"
+                android:background="@color/cat_surface1"
                 android:hint="@string/hint_nim"
+                android:padding="12dp"
                 android:inputType="number"
                 android:maxLength="10"/>
 
@@ -93,14 +103,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/label_email"
-                style="@style/LabelTextStyle"/>
+                style="@style/LabelTextStyle"
+                android:textColor="@color/cat_text"/>
 
             <EditText
                 android:id="@+id/edtEmail"
                 style="@style/EditTextStyle"
-                android:textColor="@color/black"
+                android:textColor="@color/cat_text"
+                android:textColorHint="@color/cat_overlay0"
+                android:background="@color/cat_surface1"
                 android:minHeight="48dp"
                 android:hint="@string/hint_email"
+                android:padding="12dp"
                 android:inputType="textEmailAddress"/>
 
             <!-- RadioButton: Jenis Kelamin -->
@@ -108,7 +122,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/label_jenis_kelamin"
-                style="@style/LabelTextStyle"/>
+                style="@style/LabelTextStyle"
+                android:textColor="@color/cat_text"/>
 
             <RadioGroup
                 android:id="@+id/radioGroupGender"
@@ -121,7 +136,8 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:textColor="@color/black"
+                    android:textColor="@color/cat_text"
+                    android:buttonTint="@color/cat_blue"
                     android:text="@string/radio_laki"
                     android:textSize="16sp"/>
 
@@ -129,7 +145,8 @@
                     android:id="@+id/radioPerempuan"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/black"
+                    android:textColor="@color/cat_text"
+                    android:buttonTint="@color/cat_blue"
                     android:layout_weight="1"
                     android:text="@string/radio_perempuan"
                     android:textSize="16sp"/>
@@ -140,17 +157,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/label_prodi"
-                android:textColor="@color/black"
+                android:textColor="@color/cat_text"
                 style="@style/LabelTextStyle"/>
 
             <Spinner
                 android:id="@+id/spinnerProdi"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/black"
                 android:padding="12dp"
                 android:minHeight="48dp"
-                android:background="@drawable/edittext_background"/>
+                android:background="@color/cat_surface1"/>
         </LinearLayout>
 
         <!-- Buttons -->
@@ -163,27 +179,23 @@
             <!-- Button: Reset -->
             <Button
                 android:id="@+id/btnReset"
+                style="@style/MainMenuButton"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/btn_reset"
-                android:background="@drawable/button_reset_background"
-                android:textColor="@color/white"
-                android:textStyle="bold"
-                android:padding="14dp"
+                android:backgroundTint="@color/cat_red"
                 android:layout_marginEnd="8dp"/>
 
             <!-- Button: Submit -->
             <Button
                 android:id="@+id/btnSubmit"
+                style="@style/MainMenuButton"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/btn_submit"
-                android:background="@drawable/button_background"
-                android:textColor="@color/white"
-                android:textStyle="bold"
-                android:padding="14dp"
+                android:backgroundTint="@color/cat_green"
                 android:layout_marginStart="8dp"/>
         </LinearLayout>
 
@@ -192,11 +204,12 @@
             android:id="@+id/txtInfo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Silakan isi form di atas dengan lengkap"
+            android:text="@string/info_isi_form"
             android:textSize="12sp"
-            android:textColor="@color/gray"
+            android:textColor="@color/cat_subtext0"
             android:textAlignment="center"
             android:layout_marginTop="16dp"/>
 
     </LinearLayout>
 </ScrollView>
+

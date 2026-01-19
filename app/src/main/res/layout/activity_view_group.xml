@@ -2,7 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background">
+    android:background="@color/cat_base">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -12,7 +12,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/blue_primary"
+            android:background="@color/cat_blue"
             android:padding="16dp"
             android:elevation="4dp">
 
@@ -27,7 +27,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="🛒"
+                    android:text="@string/emoji_cart"
                     android:textSize="32sp"/>
 
                 <TextView
@@ -36,14 +36,14 @@
                     android:text="@string/store_name"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:textColor="@color/white"/>
+                    android:textColor="@color/cat_base"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/tagline"
                     android:textSize="12sp"
-                    android:textColor="@color/white"/>
+                    android:textColor="@color/cat_base"/>
             </LinearLayout>
 
             <!-- Keranjang Button with Badge (RelativeLayout) -->
@@ -57,7 +57,7 @@
                     android:id="@+id/btnCart"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="🛒"
+                    android:text="@string/emoji_cart"
                     android:textSize="36sp"
                     android:padding="8dp"/>
 
@@ -66,12 +66,12 @@
                     android:id="@+id/badgeCart"
                     android:layout_width="24dp"
                     android:layout_height="24dp"
-                    android:text="3"
-                    android:textColor="@color/white"
+                    android:text="@string/badge_default"
+                    android:textColor="@color/cat_base"
                     android:textStyle="bold"
                     android:textSize="12sp"
                     android:gravity="center"
-                    android:background="@drawable/badge_background"
+                    android:background="@color/cat_red"
                     android:layout_alignTop="@id/btnCart"
                     android:layout_alignEnd="@id/btnCart"/>
             </RelativeLayout>
@@ -88,7 +88,7 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/promo_background"/>
+                android:background="@color/cat_surface0"/>
 
             <!-- Content Layer (Overlay) -->
             <LinearLayout
@@ -101,25 +101,25 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="⚡ FLASH SALE ⚡"
+                    android:text="@string/flash_sale"
                     android:textSize="24sp"
                     android:textStyle="bold"
-                    android:textColor="@color/white"/>
+                    android:textColor="@color/cat_red"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/promo"
                     android:textSize="16sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/cat_text"
                     android:layout_marginTop="4dp"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Diskon hingga 50%"
+                    android:text="@string/promo_discount"
                     android:textSize="14sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/cat_subtext1"
                     android:layout_marginTop="4dp"/>
             </LinearLayout>
         </FrameLayout>
@@ -130,7 +130,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_margin="16dp">
+            android:layout_margin="16dp"
+            android:background="@color/cat_surface0">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -138,7 +139,7 @@
                 android:text="@string/kategori"
                 android:textSize="18sp"
                 android:textStyle="bold"
-                android:textColor="@color/black"
+                android:textColor="@color/cat_text"
                 android:layout_marginBottom="12dp"/>
 
             <!-- ViewGroup 5: LinearLayout (Horizontal) - Kategori Row 1 -->
@@ -151,13 +152,15 @@
                     android:id="@+id/catElektronik"
                     style="@style/CategoryButtonStyle"
                     android:text="@string/cat_elektronik"
-                    android:background="@drawable/button_blue"/>
+                    android:background="@color/cat_blue"
+                    android:textColor="@color/cat_base"/>
 
                 <TextView
                     android:id="@+id/catFashion"
                     style="@style/CategoryButtonStyle"
                     android:text="@string/cat_fashion"
-                    android:background="@drawable/button_purple"/>
+                    android:background="@color/cat_mauve"
+                    android:textColor="@color/cat_base"/>
             </LinearLayout>
 
             <!-- LinearLayout (Horizontal) - Kategori Row 2 -->
@@ -170,13 +173,15 @@
                     android:id="@+id/catMakanan"
                     style="@style/CategoryButtonStyle"
                     android:text="@string/cat_makanan"
-                    android:background="@drawable/button_orange"/>
+                    android:background="@color/cat_peach"
+                    android:textColor="@color/cat_base"/>
 
                 <TextView
                     android:id="@+id/catOlahraga"
                     style="@style/CategoryButtonStyle"
                     android:text="@string/cat_olahraga"
-                    android:background="@drawable/button_green"/>
+                    android:background="@color/cat_green"
+                    android:textColor="@color/cat_base"/>
             </LinearLayout>
         </LinearLayout>
 
@@ -186,7 +191,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_margin="16dp">
+            android:layout_margin="16dp"
+            android:background="@color/cat_surface0">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -194,7 +200,7 @@
                 android:text="@string/produk_populer"
                 android:textSize="18sp"
                 android:textStyle="bold"
-                android:textColor="@color/black"
+                android:textColor="@color/cat_text"
                 android:layout_marginBottom="12dp"/>
 
             <!-- ViewGroup 6: GridLayout - Grid 2 kolom untuk produk -->
@@ -214,13 +220,13 @@
                     android:layout_margin="4dp"
                     android:orientation="vertical"
                     android:padding="12dp"
-                    android:background="@drawable/card_background"
+                    android:background="@color/cat_surface1"
                     android:elevation="2dp">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="💻"
+                        android:text="@string/emoji_laptop"
                         android:textSize="48sp"
                         android:layout_gravity="center"/>
 
@@ -229,6 +235,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/prod1_name"
                         style="@style/ProductTitleStyle"
+                        android:textColor="@color/cat_text"
                         android:layout_marginTop="8dp"/>
 
                     <TextView
@@ -236,6 +243,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/prod1_price"
                         style="@style/PriceStyle"
+                        android:textColor="@color/cat_green"
                         android:layout_marginTop="4dp"/>
                 </LinearLayout>
 
@@ -248,13 +256,13 @@
                     android:layout_margin="4dp"
                     android:orientation="vertical"
                     android:padding="12dp"
-                    android:background="@drawable/card_background"
+                    android:background="@color/cat_surface1"
                     android:elevation="2dp">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="📱"
+                        android:text="@string/emoji_smartphone"
                         android:textSize="48sp"
                         android:layout_gravity="center"/>
 
@@ -263,6 +271,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/prod2_name"
                         style="@style/ProductTitleStyle"
+                        android:textColor="@color/cat_text"
                         android:layout_marginTop="8dp"/>
 
                     <TextView
@@ -270,6 +279,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/prod2_price"
                         style="@style/PriceStyle"
+                        android:textColor="@color/cat_green"
                         android:layout_marginTop="4dp"/>
                 </LinearLayout>
 
@@ -282,13 +292,13 @@
                     android:layout_margin="4dp"
                     android:orientation="vertical"
                     android:padding="12dp"
-                    android:background="@drawable/card_background"
+                    android:background="@color/cat_surface1"
                     android:elevation="2dp">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="🎧"
+                        android:text="@string/emoji_headphones"
                         android:textSize="48sp"
                         android:layout_gravity="center"/>
 
@@ -297,6 +307,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/prod3_name"
                         style="@style/ProductTitleStyle"
+                        android:textColor="@color/cat_text"
                         android:layout_marginTop="8dp"/>
 
                     <TextView
@@ -304,6 +315,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/prod3_price"
                         style="@style/PriceStyle"
+                        android:textColor="@color/cat_green"
                         android:layout_marginTop="4dp"/>
                 </LinearLayout>
 
@@ -316,13 +328,13 @@
                     android:layout_margin="4dp"
                     android:orientation="vertical"
                     android:padding="12dp"
-                    android:background="@drawable/card_background"
+                    android:background="@color/cat_surface1"
                     android:elevation="2dp">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="⌚"
+                        android:text="@string/emoji_watch"
                         android:textSize="48sp"
                         android:layout_gravity="center"/>
 
@@ -331,6 +343,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/prod4_name"
                         style="@style/ProductTitleStyle"
+                        android:textColor="@color/cat_text"
                         android:layout_marginTop="8dp"/>
 
                     <TextView
@@ -338,6 +351,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/prod4_price"
                         style="@style/PriceStyle"
+                        android:textColor="@color/cat_green"
                         android:layout_marginTop="4dp"/>
                 </LinearLayout>
 
@@ -354,26 +368,22 @@
 
             <Button
                 android:id="@+id/btnBeli"
+                style="@style/MainMenuButton"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/btn_beli"
-                android:background="@drawable/button_primary"
-                android:textColor="@color/white"
-                android:textStyle="bold"
-                android:padding="14dp"
+                android:backgroundTint="@color/cat_blue"
                 android:layout_marginEnd="8dp"/>
 
             <Button
                 android:id="@+id/btnKeranjang"
+                style="@style/MainMenuButton"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/btn_keranjang"
-                android:background="@drawable/button_green"
-                android:textColor="@color/white"
-                android:textStyle="bold"
-                android:padding="14dp"
+                android:backgroundTint="@color/cat_green"
                 android:layout_marginStart="8dp"/>
         </LinearLayout>
 
@@ -381,9 +391,9 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="© 2024 Toko Online Wahyu - Semua Hak Dilindungi"
+            android:text="@string/footer_copyright"
             android:textSize="12sp"
-            android:textColor="@color/gray"
+            android:textColor="@color/cat_subtext0"
             android:textAlignment="center"
             android:padding="16dp"/>
 

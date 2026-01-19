@@ -171,7 +171,7 @@ public class ViewActivity extends AppCompatActivity {
         // Reset TextView Info
         txtInfo.setText("Silakan isi form di atas dengan lengkap");
         txtInfo.setTextSize(12);
-        txtInfo.setTextColor(getResources().getColor(R.color.gray));
+        txtInfo.setTextColor(getResources().getColor(R.color.white));
 
         // Toast
         Toast.makeText(this, "Form berhasil direset", Toast.LENGTH_SHORT).show();

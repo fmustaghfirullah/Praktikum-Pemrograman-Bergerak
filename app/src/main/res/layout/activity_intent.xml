@@ -2,7 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/blue_light">
+    android:background="@color/cat_base">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -16,22 +16,23 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:gravity="center">
+            android:gravity="center"
+            android:background="@color/cat_surface0">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="📚 Daftar Mata Kuliah"
+                android:text="@string/header_course_list"
                 android:textSize="24sp"
                 android:textStyle="bold"
-                android:textColor="@color/blue_primary"/>
+                android:textColor="@color/cat_blue"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Teknik Informatika - Semester 5"
+                android:text="@string/course_list_subtitle"
                 android:textSize="14sp"
-                android:textColor="@color/gray"
+                android:textColor="@color/cat_subtext1"
                 android:layout_marginTop="4dp"/>
         </LinearLayout>
 
@@ -45,7 +46,7 @@
             android:layout_marginTop="16dp"
             android:clickable="true"
             android:focusable="true"
-            android:background="@drawable/card_background">
+            android:background="@color/cat_surface0">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -62,7 +63,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="👤 "
+                    android:text="@string/emoji_person"
                     android:textSize="14sp"/>
 
                 <TextView
@@ -81,7 +82,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="🔖 "
+                    android:text="@string/emoji_tag"
                     android:textSize="14sp"/>
 
                 <TextView
@@ -95,9 +96,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Tap untuk melihat detail →"
+                android:text="@string/tap_for_detail"
                 android:textSize="12sp"
-                android:textColor="@color/blue_primary"
+                android:textColor="@color/cat_blue"
                 android:textStyle="italic"
                 android:layout_marginTop="8dp"/>
         </LinearLayout>
@@ -112,7 +113,7 @@
             android:layout_marginTop="8dp"
             android:clickable="true"
             android:focusable="true"
-            android:background="@drawable/card_background">
+            android:background="@color/cat_surface0">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -129,7 +130,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="👤 "
+                    android:text="@string/emoji_person"
                     android:textSize="14sp"/>
 
                 <TextView
@@ -148,7 +149,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="🔖 "
+                    android:text="@string/emoji_tag"
                     android:textSize="14sp"/>
 
                 <TextView
@@ -162,9 +163,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Tap untuk melihat detail →"
+                android:text="@string/tap_for_detail"
                 android:textSize="12sp"
-                android:textColor="@color/blue_primary"
+                android:textColor="@color/cat_blue"
                 android:textStyle="italic"
                 android:layout_marginTop="8dp"/>
         </LinearLayout>

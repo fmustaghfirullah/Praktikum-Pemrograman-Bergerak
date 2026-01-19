@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F5F5F5"
+    android:background="@color/cat_base"
     tools:context=".LuasBangunDatarActivity">
 
   <LinearLayout
@@ -18,7 +18,7 @@
         android:text="@string/hitung_luas_bangun_datar"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:textColor="#1976D2"
+        android:textColor="@color/cat_blue"
         android:fontFamily="sans-serif-medium"
         android:layout_gravity="center"
         android:layout_marginBottom="24dp"/>
@@ -30,14 +30,14 @@
         android:text="@string/pilih_bangun_datar"
         android:textSize="16sp"
         android:textStyle="bold"
-        android:textColor="@android:color/black"
+        android:textColor="@color/cat_text"
         android:layout_marginBottom="8dp"/>
 
     <Spinner
         android:id="@+id/spinnerBangun"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/white"
+        android:background="@color/cat_surface0"
         android:padding="12dp"
         android:layout_marginBottom="24dp"
         android:minHeight="48dp" />
@@ -55,7 +55,7 @@
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:text="@string/panjang"
-          android:textColor="@android:color/black"
+          android:textColor="@color/cat_text"
           android:textSize="16sp"
           android:layout_marginTop="8dp"/>
 
@@ -65,8 +65,9 @@
           android:layout_height="wrap_content"
           android:hint="@string/masukkan_nilai"
           android:inputType="numberDecimal"
-          android:textColor="@android:color/black"
-          android:background="#FFFFFF"
+          android:textColor="@color/cat_text"
+          android:textColorHint="@color/cat_overlay0"
+          android:background="@color/cat_surface0"
           android:padding="12dp"
           android:layout_marginBottom="16dp"/>
 
@@ -76,7 +77,7 @@
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:text="@string/lebar"
-          android:textColor="@android:color/black"
+          android:textColor="@color/cat_text"
           android:textSize="16sp"
           android:layout_marginTop="8dp"/>
 
@@ -86,8 +87,9 @@
           android:layout_height="wrap_content"
           android:hint="@string/masukkan_nilai"
           android:inputType="numberDecimal"
-          android:textColor="@android:color/black"
-          android:background="#FFFFFF"
+          android:textColor="@color/cat_text"
+          android:textColorHint="@color/cat_overlay0"
+          android:background="@color/cat_surface0"
           android:padding="12dp"
           android:layout_marginBottom="16dp"/>
 
@@ -96,12 +98,9 @@
     <!-- Button Hitung -->
     <Button
         android:id="@+id/btnHitung"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/MainMenuButton"
         android:text="@string/hitung"
-        android:textSize="18sp"
-        android:padding="16dp"
-        android:backgroundTint="#4CAF50"
+        android:backgroundTint="@color/cat_green"
         android:layout_marginTop="16dp"/>
 
     <!-- Result -->
@@ -109,7 +108,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:background="#FFFFFF"
+        android:background="@color/cat_surface0"
         android:padding="16dp"
         android:layout_marginTop="24dp">
 
@@ -119,15 +118,15 @@
           android:text="@string/hasil"
           android:textSize="18sp"
           android:textStyle="bold"
-          android:textColor="@android:color/black"/>
+          android:textColor="@color/cat_text"/>
 
       <TextView
           android:id="@+id/tvHasil"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:text="-"
+          android:text="@string/symbol_dash"
           android:textSize="32sp"
-          android:textColor="#4CAF50"
+          android:textColor="@color/cat_green"
           android:fontFamily="sans-serif-medium"
           android:layout_marginTop="8dp"/>
 
@@ -137,7 +136,7 @@
           android:layout_height="wrap_content"
           android:text=""
           android:textSize="14sp"
-          android:textColor="@android:color/black"
+          android:textColor="@color/cat_subtext0"
           android:layout_marginTop="8dp"/>
 
     </LinearLayout>
@@ -145,3 +144,4 @@
   </LinearLayout>
 
 </ScrollView>
+

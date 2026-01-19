@@ -1,21 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Palet Warna Utama Aplikasi Anda -->
-    <color name="blue_primary">#1976D2</color>      <!-- Biru Gelap (seperti judul Anda) -->
-    <color name="blue_dark">#0D47A1</color>        <!-- Biru Lebih Gelap untuk Status Bar -->
-    <color name="green_accent">#4CAF50</color>     <!-- Hijau untuk Aksen (seperti tombol) -->
+    <!-- Catppuccin Mocha Palette -->
+    <color name="cat_rosewater">#f5e0dc</color>
+    <color name="cat_flamingo">#f2cdcd</color>
+    <color name="cat_pink">#f5c2e7</color>
+    <color name="cat_mauve">#cba6f7</color>
+    <color name="cat_red">#f38ba8</color>
+    <color name="cat_maroon">#eba0ac</color>
+    <color name="cat_peach">#fab387</color>
+    <color name="cat_yellow">#f9e2af</color>
+    <color name="cat_green">#a6e3a1</color>
+    <color name="cat_teal">#94e2d5</color>
+    <color name="cat_sky">#89dceb</color>
+    <color name="cat_sapphire">#74c7ec</color>
+    <color name="cat_blue">#89b4fa</color>
+    <color name="cat_lavender">#b4befe</color>
+    <color name="cat_text">#cdd6f4</color>
+    <color name="cat_subtext1">#bac2de</color>
+    <color name="cat_subtext0">#a6adc8</color>
+    <color name="cat_overlay2">#9399b2</color>
+    <color name="cat_overlay1">#7f849c</color>
+    <color name="cat_overlay0">#6c7086</color>
+    <color name="cat_surface2">#585b70</color>
+    <color name="cat_surface1">#45475a</color>
+    <color name="cat_surface0">#313244</color>
+    <color name="cat_base">#1e1e2e</color>
+    <color name="cat_mantle">#181825</color>
+    <color name="cat_crust">#11111b</color>
+
+    <!-- Essential Colors -->
     <color name="white">#FFFFFFFF</color>
     <color name="black">#FF000000</color>
-    <color name="light_gray">#F5F5F5</color>      <!-- Warna Latar Belakang -->
-    <color name="primary_dark">#1565C0</color>
-    <color name="accent">#FF9800</color>
-    <color name="gray">#757575</color>
-    <color name="green">#4CAF50</color>
-    <color name="blue_light">#E3F2FD</color>
-    <color name="red">#F44336</color>
-    <color name="orange">#FF9800</color>
-    <color name="blue">#2196F3</color>
-    <color name="yellow">#FFC107</color>
-    <color name="purple">#9C27B0</color>
-    <color name="background">#F5F5F5</color>
+
+    <!-- Compatibility Aliases (optional, but helpful for existing references) -->
+    <color name="blue_primary">@color/cat_blue</color>
+    <color name="blue_dark">@color/cat_mantle</color>
+    <color name="green_accent">@color/cat_green</color>
+    <color name="light_gray">@color/cat_surface0</color>
+    <color name="red">@color/cat_red</color>
+    <color name="orange">@color/cat_peach</color>
+    <color name="purple">@color/cat_mauve</color>
+    <color name="green">@color/cat_green</color>
 </resources>

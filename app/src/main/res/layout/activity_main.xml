@@ -1,64 +1,128 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="24dp"
-    android:background="#F5F5F5"
-    android:gravity="center"
+    android:background="@color/cat_base"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Tugas Praktikum"
-        android:textSize="32sp"
-        android:textStyle="bold"
-        android:textColor="#1976D2"
-        android:fontFamily="sans-serif-medium"
-        android:layout_marginBottom="48dp"/>
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
 
-    <Button
-        android:id="@+id/btnKalkulator"
-        style="@style/MainMenuButton"
-        android:text="@string/kalkulator"
-        android:backgroundTint="#2196F3"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tugas_praktikum"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="@color/cat_blue"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginBottom="32dp"/>
 
-    <Button
-        android:id="@+id/btnLuasBangunDatar"
-        style="@style/MainMenuButton"
-        android:text="@string/luas_bangun_datar"
-        android:backgroundTint="#4CAF50"/>
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false"
+            android:useDefaultMargins="true">
 
-    <Button
-        android:id="@+id/btnIntent"
-        style="@style/MainMenuButton"
-        android:text="@string/intent"
-        android:backgroundTint="#AF5B4C"/>
+            <Button
+                android:id="@+id/btnKalkulator"
+                style="@style/MainMenuButton"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:text="@string/kalkulator"
+                android:backgroundTint="@color/cat_blue"
+                android:drawableTop="@drawable/ic_calculator"
+                android:paddingTop="16dp"
+                android:gravity="center"
+                android:drawablePadding="8dp" />
 
-    <Button
-        android:id="@+id/btnIdentitas"
-        style="@style/MainMenuButton"
-        android:text="@string/identitas"
-        android:backgroundTint="#FF9800"/>
+            <Button
+                android:id="@+id/btnLuasBangunDatar"
+                style="@style/MainMenuButton"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:text="@string/luas_bangun_datar"
+                android:backgroundTint="@color/cat_green"
+                android:drawableTop="@drawable/ic_geometry"
+                android:paddingTop="16dp"
+                android:gravity="center"
+                android:drawablePadding="8dp"/>
 
-    <Button
-        android:id="@+id/btnView"
-        style="@style/MainMenuButton"
-        android:text="@string/view"
-        android:backgroundTint="@color/black"/>
+            <Button
+                android:id="@+id/btnIntent"
+                style="@style/MainMenuButton"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:text="@string/intent"
+                android:backgroundTint="@color/cat_maroon"
+                android:drawableTop="@drawable/ic_intent"
+                android:paddingTop="16dp"
+                android:gravity="center"
+                android:drawablePadding="8dp"/>
 
-    <Button
-        android:id="@+id/btnViewGroup"
-        style="@style/MainMenuButton"
-        android:text="@string/view_group"
-        android:backgroundTint="#1CB1AD"/>
+            <Button
+                android:id="@+id/btnIdentitas"
+                style="@style/MainMenuButton"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:text="@string/identitas"
+                android:backgroundTint="@color/cat_peach"
+                android:drawableTop="@drawable/ic_person"
+                android:paddingTop="16dp"
+                android:gravity="center"
+                android:drawablePadding="8dp"/>
 
-    <Button
-        android:id="@+id/btnSoundEffect"
-        style="@style/MainMenuButton"
-        android:text="@string/sound_effect"
-        android:backgroundTint="#E91E63"/>
+            <Button
+                android:id="@+id/btnView"
+                style="@style/MainMenuButton"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:text="@string/view"
+                android:backgroundTint="@color/cat_teal"
+                android:drawableTop="@drawable/ic_view"
+                android:paddingTop="16dp"
+                android:gravity="center"
+                android:drawablePadding="8dp"/>
 
-</LinearLayout>
+            <Button
+                android:id="@+id/btnViewGroup"
+                style="@style/MainMenuButton"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:text="@string/view_group"
+                android:backgroundTint="@color/cat_mauve"
+                android:drawableTop="@drawable/ic_group"
+                android:paddingTop="16dp"
+                android:gravity="center"
+                android:drawablePadding="8dp"/>
+
+            <Button
+                android:id="@+id/btnSoundEffect"
+                style="@style/MainMenuButton"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:text="@string/sound_effect"
+                android:backgroundTint="@color/cat_pink"
+                android:drawableTop="@drawable/ic_sound"
+                android:paddingTop="16dp"
+                android:gravity="center"
+                android:drawablePadding="8dp"/>
+
+        </GridLayout>
+    </LinearLayout>
+</ScrollView>
+

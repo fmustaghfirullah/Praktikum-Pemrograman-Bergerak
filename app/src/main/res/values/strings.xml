@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Calculator</string>
+    <string name="tugas_praktikum">Tugas Praktikum</string>
 
     <!-- String yang sudah Anda tambahkan -->
     <string name="panjang">Panjang:</string>
@@ -41,7 +42,7 @@
     <string name="apel">🍎 Apel</string>
     <string name="jeruk">🍊 Jeruk</string>
     <string name="pisang">🍌 Pisang</string>
-    <string name="Pear">🍐 Pear</string>
+    <string name="pear">🍐 Pear</string>
     <string name="semangka">🍉 Semangka</string>
     <string name="gambar_buah">Gambar Buah</string>
     <string name="kembali">Kembali</string>
@@ -98,10 +99,45 @@
 
     <string name="btn_submit">DAFTAR SEKARANG</string>
     <string name="btn_reset">Reset Form</string>
+    <string name="info_isi_form">Silakan isi form di atas dengan lengkap</string>
 
     <string name="toko_online">Toko Online</string>
     <string name="store_name">TOKO ONLINE WAHYU</string>
     <string name="tagline">Belanja Mudah, Harga Terjangkau</string>
+
+    <!-- Calculator Buttons -->
+    <string name="calc_clear">C</string>
+    <string name="calc_delete">DEL</string>
+    <string name="calc_percent">%</string>
+    <string name="calc_divide">÷</string>
+    <string name="calc_multiply">×</string>
+    <string name="calc_minus">\-</string>
+    <string name="calc_plus">+</string>
+    <string name="calc_equals">=</string>
+    <string name="calc_dot">.</string>
+    <string name="calc_7">7</string>
+    <string name="calc_8">8</string>
+    <string name="calc_9">9</string>
+    <string name="calc_4">4</string>
+    <string name="calc_5">5</string>
+    <string name="calc_6">6</string>
+    <string name="calc_1">1</string>
+    <string name="calc_2">2</string>
+    <string name="calc_3">3</string>
+    <string name="calc_0">0</string>
+    <string name="calc_default_display">0</string>
+
+    <!-- Sound Effect -->
+    <string name="sound_effect_title">Sound Effect Player</string>
+    <string name="btn_play_sound">Mainkan Suara</string>
+
+    <!-- UI Emojis & Misc -->
+    <string name="emoji_cart">🛒</string>
+    <string name="badge_default">3</string>
+    <string name="flash_sale">⚡ FLASH SALE ⚡</string>
+    <string name="promo_discount">Diskon hingga 50%</string>
+    <string name="footer_copyright">© 2024 Toko Online Wahyu - Semua Hak Dilindungi</string>
+    <string name="symbol_dash">\-</string>
 
     <!-- Categories -->
     <string name="kategori">Kategori Produk</string>
@@ -112,30 +148,32 @@
 
     <!-- Products -->
     <string name="produk_populer">Produk Populer</string>
+    <string name="promo">Promo Spesial Hari Ini!</string>
 
     <!-- Product 1 -->
     <string name="prod1_name">Laptop Gaming</string>
     <string name="prod1_price">Rp 8.500.000</string>
-    <string name="prod1_desc">Intel Core i7, RAM 16GB, SSD 512GB</string>
 
     <!-- Product 2 -->
     <string name="prod2_name">Smartphone Pro</string>
     <string name="prod2_price">Rp 5.200.000</string>
-    <string name="prod2_desc">6GB RAM, 128GB Storage, Camera 48MP</string>
 
     <!-- Product 3 -->
     <string name="prod3_name">Headphone Wireless</string>
     <string name="prod3_price">Rp 850.000</string>
-    <string name="prod3_desc">Bluetooth 5.0, Noise Canceling</string>
 
     <!-- Product 4 -->
     <string name="prod4_name">Smart Watch</string>
     <string name="prod4_price">Rp 1.200.000</string>
-    <string name="prod4_desc">Heart Rate Monitor, Waterproof IP68</string>
 
     <string name="btn_beli">BELI SEKARANG</string>
     <string name="btn_keranjang">KERANJANG</string>
-    <string name="promo">Promo Spesial Hari Ini!</string>
+
+    <!-- Symbols for Products -->
+    <string name="emoji_laptop">💻</string>
+    <string name="emoji_smartphone">📱</string>
+    <string name="emoji_headphones">🎧</string>
+    <string name="emoji_watch">⌚</string>
 
     <string-array name="prodi_list">
         <item>Pilih Program Studi</item>
@@ -150,4 +188,27 @@
 
 
 
+
+    <!-- Intent / Course List -->
+    <string name="header_course_list">📚 Daftar Mata Kuliah</string>
+    <string name="course_list_subtitle">Teknik Informatika - Semester 5</string>
+    <string name="emoji_person">👤 </string>
+    <string name="emoji_tag">🔖 </string>
+    <string name="tap_for_detail">Tap untuk melihat detail →</string>
+
+    <!-- Detail Mata Kuliah -->
+    <string name="back_with_arrow">← Kembali</string>
+    <string name="emoji_book">📖</string>
+    <string name="label_mk_name">Nama Mata Kuliah</string>
+    <string name="label_lecturer">Dosen Pengampu</string>
+    <string name="label_mk_code">Kode Mata Kuliah</string>
+    <string name="label_description">Deskripsi Mata Kuliah</string>
+    
+    <!-- Placeholders -->
+    <string name="placeholder_mk_name">Nama Mata Kuliah</string>
+    <string name="placeholder_lecturer">Nama Pengampu</string>
+    <string name="placeholder_mk_code">Kode MK</string>
+    <string name="placeholder_description">Deskripsi mata kuliah</string>
+    <string name="placeholder_fruit_name">Nama Buah</string>
+    <string name="placeholder_fruit_desc">Deskripsi buah akan tampil di sini</string>
 </resources>

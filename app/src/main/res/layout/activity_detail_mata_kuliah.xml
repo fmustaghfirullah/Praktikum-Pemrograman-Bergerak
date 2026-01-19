@@ -2,7 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/blue_light">
+    android:background="@color/cat_base">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -16,14 +16,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:gravity="center_vertical">
+            android:gravity="center_vertical"
+            android:background="@color/cat_surface0">
 
             <Button
                 android:id="@+id/btnBack"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="← Kembali"
-                android:textColor="@color/blue_primary"
+                android:text="@string/back_with_arrow"
+                android:textColor="@color/cat_blue"
                 android:background="?attr/selectableItemBackground"
                 android:textStyle="bold"/>
 
@@ -31,10 +32,10 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Detail Mata Kuliah"
+                android:text="@string/detail_mata_kuliah"
                 android:textSize="18sp"
                 android:textStyle="bold"
-                android:textColor="@color/blue_primary"
+                android:textColor="@color/cat_blue"
                 android:textAlignment="center"/>
 
             <View
@@ -49,12 +50,13 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center"
-            android:layout_marginTop="8dp">
+            android:layout_marginTop="8dp"
+            android:background="@color/cat_surface0">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="📖"
+                android:text="@string/emoji_book"
                 android:textSize="80sp"/>
         </LinearLayout>
 
@@ -64,23 +66,24 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_marginTop="8dp">
+            android:layout_marginTop="8dp"
+            android:background="@color/cat_surface0">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Nama Mata Kuliah"
+                android:text="@string/label_mk_name"
                 android:textSize="12sp"
-                android:textColor="@color/gray"/>
+                android:textColor="@color/cat_subtext1"/>
 
             <TextView
                 android:id="@+id/txtNamaMataKuliah"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Nama Mata Kuliah"
+                android:text="@string/placeholder_mk_name"
                 android:textSize="22sp"
                 android:textStyle="bold"
-                android:textColor="@color/black"
+                android:textColor="@color/cat_text"
                 android:layout_marginTop="4dp"/>
         </LinearLayout>
 
@@ -90,14 +93,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_marginTop="8dp">
+            android:layout_marginTop="8dp"
+            android:background="@color/cat_surface0">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Dosen Pengampu"
+                android:text="@string/label_lecturer"
                 android:textSize="12sp"
-                android:textColor="@color/gray"/>
+                android:textColor="@color/cat_subtext1"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -108,17 +112,17 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="👤 "
+                    android:text="@string/emoji_person"
                     android:textSize="20sp"/>
 
                 <TextView
                     android:id="@+id/txtPengampu"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Nama Pengampu"
+                    android:text="@string/placeholder_lecturer"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:textColor="@color/black"/>
+                    android:textColor="@color/cat_text"/>
             </LinearLayout>
         </LinearLayout>
 
@@ -128,14 +132,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_marginTop="8dp">
+            android:layout_marginTop="8dp"
+            android:background="@color/cat_surface0">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Kode Mata Kuliah"
+                android:text="@string/label_mk_code"
                 android:textSize="12sp"
-                android:textColor="@color/gray"/>
+                android:textColor="@color/cat_subtext1"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -146,17 +151,17 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="🔖 "
+                    android:text="@string/emoji_tag"
                     android:textSize="20sp"/>
 
                 <TextView
                     android:id="@+id/txtKodeMataKuliah"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Kode MK"
+                    android:text="@string/placeholder_mk_code"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:textColor="@color/blue_primary"
+                    android:textColor="@color/cat_blue"
                     android:fontFamily="monospace"/>
             </LinearLayout>
         </LinearLayout>
@@ -167,22 +172,23 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_marginTop="8dp">
+            android:layout_marginTop="8dp"
+            android:background="@color/cat_surface0">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Deskripsi Mata Kuliah"
+                android:text="@string/label_description"
                 android:textSize="12sp"
-                android:textColor="@color/gray"/>
+                android:textColor="@color/cat_subtext1"/>
 
             <TextView
                 android:id="@+id/txtDeskripsi"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Deskripsi mata kuliah"
+                android:text="@string/placeholder_description"
                 android:textSize="15sp"
-                android:textColor="@color/black"
+                android:textColor="@color/cat_text"
                 android:layout_marginTop="8dp"
                 android:lineSpacingExtra="4dp"
                 android:textAlignment="textStart"/>

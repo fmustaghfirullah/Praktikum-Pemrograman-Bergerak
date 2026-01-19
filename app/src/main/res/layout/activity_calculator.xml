@@ -5,20 +5,20 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    android:background="#F5F5F5"
+    android:background="@color/cat_base"
     tools:context=".CalculatorActivity">
 
     <TextView
         android:id="@+id/tvDisplay"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="0"
+        android:text="@string/calc_default_display"
         android:textSize="48sp"
-        android:textColor="#212121"
+        android:textColor="@color/cat_text"
         android:fontFamily="sans-serif-light"
         android:gravity="end"
         android:padding="24dp"
-        android:background="#FFFFFF"
+        android:background="@color/cat_surface0"
         android:layout_marginBottom="16dp"/>
 
     <GridLayout
@@ -34,9 +34,10 @@
             android:layout_height="80dp"
             android:layout_columnWeight="1"
             android:layout_margin="4dp"
-            android:text="C"
+            android:text="@string/calc_clear"
             android:textSize="24sp"
-            android:backgroundTint="#FF5252"/>
+            android:textColor="@color/cat_base"
+            android:backgroundTint="@color/cat_red"/>
 
         <Button
             android:id="@+id/btnDelete"
@@ -44,9 +45,10 @@
             android:layout_height="80dp"
             android:layout_columnWeight="1"
             android:layout_margin="4dp"
-            android:text="DEL"
+            android:text="@string/calc_delete"
             android:textSize="20sp"
-            android:backgroundTint="#FF7043"/>
+            android:textColor="@color/cat_base"
+            android:backgroundTint="@color/cat_maroon"/>
 
         <Button
             android:id="@+id/btnPercent"
@@ -54,9 +56,10 @@
             android:layout_height="80dp"
             android:layout_columnWeight="1"
             android:layout_margin="4dp"
-            android:text="%"
+            android:text="@string/calc_percent"
             android:textSize="24sp"
-            android:backgroundTint="#FFA726"/>
+            android:textColor="@color/cat_base"
+            android:backgroundTint="@color/cat_peach"/>
 
         <Button
             android:id="@+id/btnDivide"
@@ -64,9 +67,10 @@
             android:layout_height="80dp"
             android:layout_columnWeight="1"
             android:layout_margin="4dp"
-            android:text="÷"
+            android:text="@string/calc_divide"
             android:textSize="24sp"
-            android:backgroundTint="#FFA726"/>
+            android:textColor="@color/cat_base"
+            android:backgroundTint="@color/cat_peach"/>
 
         <!-- Row 2 -->
         <Button
@@ -75,9 +79,10 @@
             android:layout_height="80dp"
             android:layout_columnWeight="1"
             android:layout_margin="4dp"
-            android:text="7"
+            android:text="@string/calc_7"
             android:textSize="24sp"
-            android:backgroundTint="#BDBDBD"/>
+            android:textColor="@color/cat_text"
+            android:backgroundTint="@color/cat_surface1"/>
 
         <Button
             android:id="@+id/btn8"
@@ -85,9 +90,10 @@
             android:layout_height="80dp"
             android:layout_columnWeight="1"
             android:layout_margin="4dp"
-            android:text="8"
+            android:text="@string/calc_8"
             android:textSize="24sp"
-            android:backgroundTint="#BDBDBD"/>
+            android:textColor="@color/cat_text"
+            android:backgroundTint="@color/cat_surface1"/>
 
         <Button
             android:id="@+id/btn9"
@@ -95,9 +101,10 @@
             android:layout_height="80dp"
             android:layout_columnWeight="1"
             android:layout_margin="4dp"
-            android:text="9"
+            android:text="@string/calc_9"
             android:textSize="24sp"
-            android:backgroundTint="#BDBDBD"/>
+            android:textColor="@color/cat_text"
+            android:backgroundTint="@color/cat_surface1"/>
 
         <Button
             android:id="@+id/btnMultiply"
@@ -105,9 +112,10 @@
             android:layout_height="80dp"
             android:layout_columnWeight="1"
             android:layout_margin="4dp"
-            android:text="×"
+            android:text="@string/calc_multiply"
             android:textSize="24sp"
-            android:backgroundTint="#FFA726"/>
+            android:textColor="@color/cat_base"
+            android:backgroundTint="@color/cat_peach"/>
 
         <!-- Row 3 -->
         <Button
@@ -116,9 +124,10 @@
             android:layout_height="80dp"
             android:layout_columnWeight="1"
             android:layout_margin="4dp"
-            android:text="4"
+            android:text="@string/calc_4"
             android:textSize="24sp"
-            android:backgroundTint="#BDBDBD"/>
+            android:textColor="@color/cat_text"
+            android:backgroundTint="@color/cat_surface1"/>
 
         <Button
             android:id="@+id/btn5"
@@ -126,9 +135,10 @@
             android:layout_height="80dp"
             android:layout_columnWeight="1"
             android:layout_margin="4dp"
-            android:text="5"
+            android:text="@string/calc_5"
             android:textSize="24sp"
-            android:backgroundTint="#BDBDBD"/>
+            android:textColor="@color/cat_text"
+            android:backgroundTint="@color/cat_surface1"/>
 
         <Button
             android:id="@+id/btn6"
@@ -136,9 +146,10 @@
             android:layout_height="80dp"
             android:layout_columnWeight="1"
             android:layout_margin="4dp"
-            android:text="6"
+            android:text="@string/calc_6"
             android:textSize="24sp"
-            android:backgroundTint="#BDBDBD"/>
+            android:textColor="@color/cat_text"
+            android:backgroundTint="@color/cat_surface1"/>
 
         <Button
             android:id="@+id/btnMinus"
@@ -146,9 +157,10 @@
             android:layout_height="80dp"
             android:layout_columnWeight="1"
             android:layout_margin="4dp"
-            android:text="-"
+            android:text="@string/calc_minus"
             android:textSize="24sp"
-            android:backgroundTint="#FFA726"/>
+            android:textColor="@color/cat_base"
+            android:backgroundTint="@color/cat_peach"/>
 
         <!-- Row 4 -->
         <Button
@@ -157,9 +169,10 @@
             android:layout_height="80dp"
             android:layout_columnWeight="1"
             android:layout_margin="4dp"
-            android:text="1"
+            android:text="@string/calc_1"
             android:textSize="24sp"
-            android:backgroundTint="#BDBDBD"/>
+            android:textColor="@color/cat_text"
+            android:backgroundTint="@color/cat_surface1"/>
 
         <Button
             android:id="@+id/btn2"
@@ -167,9 +180,10 @@
             android:layout_height="80dp"
             android:layout_columnWeight="1"
             android:layout_margin="4dp"
-            android:text="2"
+            android:text="@string/calc_2"
             android:textSize="24sp"
-            android:backgroundTint="#BDBDBD"/>
+            android:textColor="@color/cat_text"
+            android:backgroundTint="@color/cat_surface1"/>
 
         <Button
             android:id="@+id/btn3"
@@ -177,9 +191,10 @@
             android:layout_height="80dp"
             android:layout_columnWeight="1"
             android:layout_margin="4dp"
-            android:text="3"
+            android:text="@string/calc_3"
             android:textSize="24sp"
-            android:backgroundTint="#BDBDBD"/>
+            android:textColor="@color/cat_text"
+            android:backgroundTint="@color/cat_surface1"/>
 
         <Button
             android:id="@+id/btnPlus"
@@ -187,9 +202,10 @@
             android:layout_height="80dp"
             android:layout_columnWeight="1"
             android:layout_margin="4dp"
-            android:text="+"
+            android:text="@string/calc_plus"
             android:textSize="24sp"
-            android:backgroundTint="#FFA726"/>
+            android:textColor="@color/cat_base"
+            android:backgroundTint="@color/cat_peach"/>
 
         <!-- Row 5 -->
         <Button
@@ -199,9 +215,10 @@
             android:layout_columnWeight="2"
             android:layout_columnSpan="2"
             android:layout_margin="4dp"
-            android:text="0"
+            android:text="@string/calc_0"
             android:textSize="24sp"
-            android:backgroundTint="#BDBDBD"/>
+            android:textColor="@color/cat_text"
+            android:backgroundTint="@color/cat_surface1"/>
 
         <Button
             android:id="@+id/btnDot"
@@ -209,9 +226,10 @@
             android:layout_height="80dp"
             android:layout_columnWeight="1"
             android:layout_margin="4dp"
-            android:text="."
+            android:text="@string/calc_dot"
             android:textSize="24sp"
-            android:backgroundTint="#BDBDBD"/>
+            android:textColor="@color/cat_text"
+            android:backgroundTint="@color/cat_surface1"/>
 
         <Button
             android:id="@+id/btnEquals"
@@ -219,10 +237,12 @@
             android:layout_height="80dp"
             android:layout_columnWeight="1"
             android:layout_margin="4dp"
-            android:text="="
+            android:text="@string/calc_equals"
             android:textSize="24sp"
-            android:backgroundTint="#4CAF50"/>
+            android:textColor="@color/cat_base"
+            android:backgroundTint="@color/cat_green"/>
 
     </GridLayout>
-
 </LinearLayout>
+
+
